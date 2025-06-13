@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headerLinks}}
+
+    <!-- ✅ Add Font Awesome if not already included in headerLinks -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    {{>navbar}}
+
+    <!-- Main header -->
+    <div class="main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="container-fluid main_content">
+                    
+                    <!-- Weather form -->
+                    <form class="temp_form">
+                        <input type="text" id="cityName" placeholder="Enter your city name..." autocomplete="off">
+                        <br>
+                        <input type="submit" value="Search" id="submitBtn">
+                        <p id="temp_err"></p>
+                    </form>
+
+                    <!-- Weather display -->
+                    <div class="tempInformation">
+                        <div class="top_layer">
+                            <p id="day">Tuesday</p>
+                            <p id="today_date">13 Oct</p>
+                        </div>
+                        <div class="main_layer">
+                            <p id="city_name">Get output here</p>
+                            <div class="middle_layer data_hide">
+                                <p id="temp">
+                                    <span id="temp_real_val">0</span><sup>°</sup>C
+                                </p>
+                                <p id="temp_status">
+                                    <i class="fas fa-cloud" aria-hidden="true"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+
+    <!-- ✅ Fixed: Correct path for JS file (must be in /public/js/) -->
+    <script src="/js/main.js"></script>
+</body>
+</html>

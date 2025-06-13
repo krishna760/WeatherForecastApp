@@ -1,0 +1,19 @@
+{
+  "name": "full-express-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
+  },
+  "author": "krishna bhandari",
+  "license": "ISC",
+  "dependencies": {
+    "@types/hbs": "^4.0.1",
+    "express": "^4.17.3",
+    "hbs": "^4.2.0",
+    "path": "^0.12.7",
+    "requests": "^0.3.0"
+  }
+}
